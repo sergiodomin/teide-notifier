@@ -1,6 +1,9 @@
 import time
 import os
 import requests
+import playwright.__main__ as pwmain
+pwmain.main(["install", "chromium"])
+
 from playwright.sync_api import sync_playwright
 
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
