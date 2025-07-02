@@ -1,34 +1,32 @@
-# README.md
-
 # Teide Notifier
 
-Este script revisa cada 30 minutos si hay plazas disponibles para subir al Teide (Pico) y envía una notificación por Telegram si las encuentra.
+Este script revisa cada 30 minutos si hay plazas disponibles para subir al Teide (Pico) y envía una notificación por Telegram.
 
-## 🔧 Configuración
+## ⚙️ Configuración
 
 1. Crea un archivo `.env` con tus credenciales:
 
-```
+```env
 TELEGRAM_TOKEN=xxxx
 TELEGRAM_CHAT_ID=123456789
 ```
 
 2. Instala dependencias:
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
 3. Ejecuta el script:
 
-```
+```bash
 python main.py
 ```
 
 ## ☁️ Despliegue en Railway
 
-1. Sube este repositorio a GitHub (puede ser privado).
-2. Crea un nuevo proyecto en [railway.app](https://railway.app).
-3. Importa desde GitHub.
-4. Añade tus variables en el apartado **Variables**.
+1. Sube este repositorio a GitHub (puede ser privado).  
+2. Crea un nuevo proyecto en [railway.app](https://railway.app).  
+3. Importa desde GitHub.  
+4. Añade tus variables en el apartado **"Variables"**.  
 5. ¡Hecho!
