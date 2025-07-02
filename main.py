@@ -1,10 +1,13 @@
 import time
 import os
 import requests
-import playwright.__main__ as pwmain
-pwmain.main(["install", "chromium"])
+import subprocess
+
+# Instala Chromium si no está presente
+subprocess.run(["playwright", "install", "chromium"], check=True)
 
 from playwright.sync_api import sync_playwright
+
 
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
